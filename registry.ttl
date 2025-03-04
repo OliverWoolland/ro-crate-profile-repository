@@ -1,0 +1,67 @@
+@base <https://open-science.vliz.be/demo-profile-repository/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix schema: <http://schema.org/> .
+
+<./> a schema:CreativeWork ;
+    schema:hasPart [ a schema:ItemList ;
+            schema:isPartOf <./> ;
+            schema:itemListElement <https://cedricdcc.github.io/test-profile-repository/test/data/>,
+                <https://cedricdcc.github.io/test-profile-repository/test/data/a-profile.json>,
+                <https://cedricdcc.github.io/test-profile-repository/test/data/bas-c-profile.json> ;
+            schema:name "registry of all profiles" ] .
+
+<https://cedricdcc.github.io/test-profile-repository/test/data/README.md> a schema:MediaObject .
+
+<https://cedricdcc.github.io/test-profile-repository/test/data/a-profile.json> a schema:CreativeWork,
+        schema:ListItem,
+        prof:Profile ;
+    dct:conformsTo <https://w3id.org/ro/crate/1.1> ;
+    schema:about <https://cedricdcc.github.io/test-profile-repository/test/data/> ;
+    schema:author "Kendrick Lemarenostrum" ;
+    schema:description "test repo for test profile" ;
+    schema:item <https://cedricdcc.github.io/test-profile-repository/test/data/a-profile.json> ;
+    schema:keywords "correct",
+        "profile",
+        "test" ;
+    schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+    schema:name "test profile A" ;
+    schema:version "1.0.0" .
+
+<https://cedricdcc.github.io/test-profile-repository/test/data/bas-c-profile.json> a schema:CreativeWork,
+        schema:ListItem,
+        prof:Profile ;
+    dct:conformsTo <https://w3id.org/ro/crate/1.1> ;
+    schema:about <https://cedricdcc.github.io/test-profile-repository/test/data/> ;
+    schema:author "Decruw Cedric" ;
+    schema:description "test repo for test profile" ;
+    schema:item <https://cedricdcc.github.io/test-profile-repository/test/data/bas-c-profile.json> ;
+    schema:keywords "correct",
+        "profile",
+        "test" ;
+    schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+    schema:name "test profile" ;
+    schema:version "1.0.0" .
+
+<https://cedricdcc.github.io/test-profile-repository/test/data/> a schema:Dataset,
+        schema:ListItem,
+        prof:Profile ;
+    schema:author "Kendrick Lemarenostrum" ;
+    schema:description "test repo for test profile" ;
+    schema:hasPart <https://cedricdcc.github.io/test-profile-repository/test/data/README.md> ;
+    schema:item <https://cedricdcc.github.io/test-profile-repository/test/data/> ;
+    schema:keywords "correct",
+        "profile",
+        "test" ;
+    schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+    schema:name "test profile A" ;
+    schema:version "1.0.0" .
+
+[] a schema:WebPage ;
+    schema:headline "test file readme" ;
+    schema:url <https://cedricdcc.github.io/test-profile-repository/test/data/> .
+
+[] a schema:WebPage ;
+    schema:headline "test file readme" ;
+    schema:url <https://cedricdcc.github.io/test-profile-repository/test/data/> .
+
