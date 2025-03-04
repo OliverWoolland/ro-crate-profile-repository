@@ -13,7 +13,7 @@ jobs:
       - name: RO-Crate to Pages
         uses: vliz-be-opsci/profile-repository-to-pages@latest
         with:
-          base_uri: https://open-science.vliz.be/demo-profile-repository/
+          base_uri: https://oliverwoolland.github.io/ro-crate-profile-repository/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
