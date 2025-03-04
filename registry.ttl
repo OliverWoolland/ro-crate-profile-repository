@@ -1,4 +1,4 @@
-@base <https://open-science.vliz.be/demo-profile-repository/> .
+@base <https://oliverwoolland.github.io/ro-crate-profile-repository/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix schema: <http://schema.org/> .
