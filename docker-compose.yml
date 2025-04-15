@@ -1,0 +1,32 @@
+services:
+  build:
+    build:
+      context: profile-repository-to-pages
+      dockerfile: Dockerfile
+    environment:
+      INPUT_BASE_URI: https://oliverwoolland.github.io/ro-crate-profile-repository/
+      GITHUB_REPOSITORY: oliverwoolland/ro-crate-profile-repository
+    volumes:
+      - .:/github/workspace
+      - generated-pages:/github/workspace/unicornpages
+    entrypoint: /entrypoint.sh
+
+  serve:
+    build:
+      context: .
+      dockerfile_inline: |
+        FROM jekyll/jekyll:4.2.0
+        RUN gem install webrick
+    command: jekyll serve --watch --host 0.0.0.0 --port 4000
+    ports:
+      - "4000:4000"
+    working_dir: /srv/jekyll
+    volumes:
+      - generated-pages:/srv/jekyll
+    depends_on:
+      build:
+        condition: service_completed_successfully
+
+volumes:
+  generated-pages:
+    name: generated-pages

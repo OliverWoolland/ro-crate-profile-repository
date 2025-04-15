@@ -1,0 +1,3 @@
+[submodule "profile-repository-to-pages"]
+	path = profile-repository-to-pages
+	url = git@github.com:vliz-be-opsci/profile-repository-to-pages.git
