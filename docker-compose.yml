@@ -1,6 +1,8 @@
 services:
   build:
-    image: profile-to-pages
+    build:
+      context: profile-repository-to-pages
+      dockerfile: Dockerfile
     environment:
       INPUT_BASE_URI: https://oliverwoolland.github.io/ro-crate-profile-repository/
       GITHUB_REPOSITORY: oliverwoolland/ro-crate-profile-repository
