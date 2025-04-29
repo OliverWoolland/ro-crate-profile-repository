@@ -1,4 +1,2 @@
-URI,contact
-https://cedricdcc.github.io/test-profile-repository/test/data/basic-profile.json,Gepard Retardieu
-https://cedricdcc.github.io/test-profile-repository/test/data/test-profile-missing-metadata.json,John Doe
-https://www.youtube.com/,Homer Simpson
+URI,contact, optional_comment
+https://trefx.uk/5s-crate/0.4/, https://orcid.org/0000-0001-6387-5988, 5S CRATE profile
