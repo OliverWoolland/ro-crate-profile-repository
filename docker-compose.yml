@@ -7,7 +7,7 @@ services:
       INPUT_BASE_URI: https://oliverwoolland.github.io/ro-crate-profile-repository/
       GITHUB_REPOSITORY: oliverwoolland/ro-crate-profile-repository
     volumes:
-      - .:/github/workspace
+      - ./registries:/github/workspace
       - generated-pages:/github/workspace/unicornpages
     entrypoint: /entrypoint.sh
 
