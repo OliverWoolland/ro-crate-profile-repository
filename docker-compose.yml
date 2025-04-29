@@ -1,5 +1,6 @@
 services:
   build:
+    container_name: registry-builder
     build:
       context: profile-repository-to-pages
       dockerfile: Dockerfile
@@ -12,6 +13,7 @@ services:
     entrypoint: /entrypoint.sh
 
   serve:
+    container_name: registry-server
     build:
       context: .
       dockerfile_inline: |
