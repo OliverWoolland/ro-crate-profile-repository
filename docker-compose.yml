@@ -1,5 +1,6 @@
 services:
   build:
+    container_name: registry-builder
     build:
       context: profile-repository-to-pages
       dockerfile: Dockerfile
@@ -7,11 +8,12 @@ services:
       INPUT_BASE_URI: https://oliverwoolland.github.io/ro-crate-profile-repository/
       GITHUB_REPOSITORY: oliverwoolland/ro-crate-profile-repository
     volumes:
-      - .:/github/workspace
+      - ./registries.csv:/github/workspace/registries.csv
       - generated-pages:/github/workspace/unicornpages
     entrypoint: /entrypoint.sh
 
   serve:
+    container_name: registry-server
     build:
       context: .
       dockerfile_inline: |

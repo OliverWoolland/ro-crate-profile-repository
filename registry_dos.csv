@@ -1,7 +1,0 @@
-URI,contact,optional_comment
-https://cedricdcc.github.io/test-profile-repository/test/data/a-profile.json, https://orcid.org/0000-0001-6387-5988, optional comment
-https://cedricdcc.github.io/test-profile-repository/test/data/bas-c-profile.json,https://orcid.org/0000-0001-6387-5988
-https://data.arms-mbon.org/,https://orcid.org/0000-0001-6387-5988
-https://cedricdcc.github.io/test_single_rocrate/latest/,https://orcid.org/0000-0001-6387-5988
-wrong-entry, plain_wrong, this line will trigger error for line entry
-https://open-science.vliz.be/demo-crate/draft/,https://orcid.org/0000-0001-6387-5988, checking the harvesting of the profile via crate
