@@ -14,6 +14,8 @@ jobs:
         uses: vliz-be-opsci/profile-repository-to-pages@latest
         with:
           base_uri: https://oliverwoolland.github.io/ro-crate-profile-repository/
+      - name: Debug - List all files after RO-Crate
+        run: ls -R .
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
